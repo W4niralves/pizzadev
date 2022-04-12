@@ -1,0 +1,8 @@
+*{
+    margin:0;
+    padding: 0; 
+    box-sizing: border-box
+}
+body{
+    background: hsla(236, 93%, 41%, 0.623);
+}
