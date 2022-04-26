@@ -25,3 +25,10 @@ img {
   a {
     text-decoration: none;
   }
+  body{
+    font: 400 1rem 'Dm Sans', 'sans-serif';
+
+  }
+  h1 {
+    font: 700 1rem 'Poppins', 'sans-serif';
+  }
