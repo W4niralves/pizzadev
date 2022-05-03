@@ -4,7 +4,7 @@
     box-sizing: border-box
 }
 body{
-    background: hsla(236, 93%, 41%, 0.623);
+    background: hsla(236, 94%, 38%, 0.795);
 }
 .container {
     margin-left: 1.5rem;
@@ -15,7 +15,8 @@ body{
 nav { 
    display:flex;
    justify-content: space-between;
-
+   height: 4.5rem;
+   align-items: center;
 }
 img {
     width: 100%;
@@ -27,8 +28,53 @@ img {
   }
   body{
     font: 400 1rem 'Dm Sans', 'sans-serif';
+    color: var(--text-color);
+    background: var(--body-color);
+    -webkit-font-smoothing: antialiased;
 
   }
+
+  .logo h1{
+    font: 700 1.5rem 'Poppins', 'sans-serif';
+    color: var(--title-color); 
+    }
+
+    .logo span {
+      color: var(--base-color);
+    }
+
   h1 {
     font: 700 1rem 'Poppins', 'sans-serif';
+    color: var(--title-color);
+  }
+
+ .section {
+  padding: 1.5rem 0;
+}
+
+.grid { 
+  display: grid;
+  gap: 2rem;
+}
+.home .texto {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+.home .imagem {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+  :root {
+    --color:red;  
+    --hue: 159;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
   }
