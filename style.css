@@ -44,7 +44,7 @@ img {
     }
 
   h1 {
-    font: 700 1rem 'Poppins', 'sans-serif';
+    font: 700 1.5rem 'Poppins', 'sans-serif';
     color: var(--title-color);
   }
 
@@ -61,9 +61,35 @@ img {
   margin-right: 1.5rem;
   text-align: center;
 }
+
+.home .texto h1 {
+  margin-bottom: 1rem;
+}
+
+.home .texto p {
+  margin-bottom: 1.5rem;
+}
+
+
 .home .imagem {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  display: inline-flex;
+  height: 3.5rem;
+  align-items: center;
+  padding: 0 2rem;
+  font: 500 1rem 'Dm Sans', sans-serif;
+ 
+
+}
+.button:hover {
+  background: var(--base-color-alt);
+
 }
 
   :root {
