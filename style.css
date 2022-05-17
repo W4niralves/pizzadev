@@ -104,3 +104,27 @@ img {
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
   }
+  .Dev .texto{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+  }
+  
+  .Dev .texto h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .Dev .texto p {
+    margin-bottom: 1.5rem;
+  }
+  .Dev .imagem {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .log h1{
+    font: 700 1.5rem 'Dancing script', 'Dancing script';
+    
+    }
+    .log span{
+      color: var(--base-color); 
+    }
