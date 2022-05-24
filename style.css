@@ -11,15 +11,46 @@ body{
     margin-right: 1.5rem;
     width: 90%;
  }
+header{
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 100;
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: var(--body-color);
+}
+
+ main{
+  margin-top: 4rem;
+}
+
 
 nav { 
    display:flex;
    justify-content: space-between;
    height: 4.5rem;
    align-items: center;
+   width: 100%;
 }
+ nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  background: red ;
+  height: 100vh;
+  width: 100vw;
+  top:0;
+  left:0;
+  position: fixed;
+}
+nav .menu{
+  opacity: 0;
+  visibility: hidden;
+ }
+
 img {
-    width: 100%;
+    width: 95%;
     height: auto;  
   }
 
@@ -47,31 +78,31 @@ img {
     font: 700 1.5rem 'Poppins', 'sans-serif';
     color: var(--title-color);
   }
-
- .section {
-  padding: 1.5rem 0;
-}
-
-.grid { 
-  display: grid;
-  gap: 2rem;
-}
-.home .texto {
-  margin-left: 1.5rem;
+  
+  .section {
+    padding: 1.5rem 0;
+  }
+  
+  .grid { 
+    display: grid;
+    gap: 2rem;
+  }
+  #home .texto {
+    margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
 }
 
-.home .texto h1 {
+#home .texto h1 {
   margin-bottom: 1rem;
 }
 
-.home .texto p {
+#home .texto p {
   margin-bottom: 1.5rem;
 }
 
 
-.home .imagem {
+#home .imagem {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -84,15 +115,24 @@ img {
   align-items: center;
   padding: 0 2rem;
   font: 500 1rem 'Dm Sans', sans-serif;
- 
-
+  
+  
 }
 .button:hover {
   background: var(--base-color-alt);
-
+  
+}
+.divider {
+  height: 1px;
+  background: linear-gradient(
+     270deg,
+     hsla(var(--hue),36%,57%,1) 0%,
+     hsla(var(--hue),65%,88%,0.34) 100%
+  );
 }
 
-  :root {
+
+:root {
     --color:red;  
     --hue: 159;
     /* HSL color mode */
@@ -104,27 +144,5 @@ img {
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
   }
-  .Dev .texto{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    text-align: center;
-  }
+
   
-  .Dev .texto h1 {
-    margin-bottom: 1rem;
-  }
-  
-  .Dev .texto p {
-    margin-bottom: 1.5rem;
-  }
-  .Dev .imagem {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .log h1{
-    font: 700 1.5rem 'Dancing script', 'Dancing script';
-    
-    }
-    .log span{
-      color: var(--base-color); 
-    }
