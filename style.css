@@ -25,7 +25,9 @@ header{
  main{
   margin-top: 4rem;
 }
-
+ul {
+  list-style: none;
+}
 
 nav { 
    display:flex;
@@ -37,7 +39,7 @@ nav {
  nav.show .menu {
   opacity: 1;
   visibility: visible;
-  background: red ;
+  background: var(--body-color) ;
   height: 100vh;
   width: 100vw;
   top:0;
@@ -48,7 +50,52 @@ nav .menu{
   opacity: 0;
   visibility: hidden;
  }
-
+ nav .icon-close {
+  visibility: hidden;
+  opacity: 0;
+  
+  position: absolute;
+  right: 1.5rem;
+  
+}
+nav.show div.icon-close {
+  visibility: visible;
+  opacity: 1;
+}
+.toggle {
+  font-size: 1.5rem;
+  color: var(--base-color); 
+  cursor: pointer; 
+    
+ }     
+ nav ul li {
+  text-align:center;
+}
+nav ul li a {
+  transition: color 0.3s;
+  position:relative;
+}
+nav ul li a:hover::after{
+  content:"";
+  width:100%;
+  height: 2px;
+  background:var(--base-color);
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: var(--base-color);
+  
+}
+nav.show ul.grid {
+  gap: 4rem;
+}
+nav.show .menu {
+  display: grid;
+  place-content: center;
+}
 img {
     width: 95%;
     height: auto;  
@@ -74,7 +121,7 @@ img {
       color: var(--base-color);
     }
 
-  h1 {
+  .title {
     font: 700 1.5rem 'Poppins', 'sans-serif';
     color: var(--title-color);
   }
